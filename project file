@@ -1,0 +1,13 @@
+create a vpc in us-east-1 with cidr 10.0.0.0/16
+create six subntes in vpc
+myweb1-useast1a-10.0.0.0/24
+myweb2-useast2a-10.0.1.0/24
+mypriavte1-useast1a-10.0.2.0/24
+myprivate2-useast2a-10.0.3.0/24
+mydb1-useast1a-10.0.4.0./24
+ig-3tier
+natgw-nataz1-useast1-attach with myweb1
+natgw-nataz2-useast2-attch with myweb2
+myfirstroute1(route) attach to both public subnet
+myprivaterouteaz1-natgateway-myprivte1
+myprivaterouteaz2-natgaeway-mypitae2
