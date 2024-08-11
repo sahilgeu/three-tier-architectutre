@@ -11,3 +11,17 @@ natgw-nataz2-useast2-attch with myweb2
 myfirstroute1(route) attach to both public subnet
 myprivaterouteaz1-natgateway-myprivte1
 myprivaterouteaz2-natgaeway-mypitae2
+create s3 bucket in the same region-threetierbuvket
+create an iam role for ec2-choose s3 readonlyaccess and ssm managed instance core-threetierbuvket
+create secutiry group
+1-for load balancer internalloadbalancersg-http,https,tcp-ipv
+2-for web tier -from load balaner - attch souucetype http-loadbalancersg
+                                    attch http-muyip
+3- sg - privateinternal- accessibel from webtiersg
+4-sg for private instances accessibele from privateinternal(privateinstances)-customtcp-4000-sg priaveinternal
+5-sg for database mysql/aurora accessibe from (privateinstances)
+create a subnet group for databses threetiersubnet attch to az and subnets of db 
+create rds auror USername admin and Kubernetes14
+
+
+
